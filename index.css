@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: black; */
+    background-color: aqua;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.heading h1{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+.heading h2{
+    text-align: center;
+
+    
+}
+form{
+    background-color: rgba(176, 113, 253, 0.7);
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius:25px;
+}
+form .box{
+    width: 98.5%;
+    height: 2.8em;
+    position: relative;
+    bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.option select{
+    width: 98.5%;
+    height: 2.7em;
+    position: relative;
+    bottom: 10px;
+}
+#summit{
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    background-color: red;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
