@@ -1,60 +1,73 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 body{
-    /* background-color: black; */
-    background-color: aqua;
-    background-size: cover;
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
-.heading h1{
+
+table{
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(124,154,167);
+}
+
+table.list{
     text-align: center;
     width: 100%;
-    margin: auto;
-    margin-top: 100px;
-}
-.heading h2{
-    text-align: center;
-
-    
-}
-form{
-    background-color: rgba(176, 113, 253, 0.7);
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    border-radius:25px;
-}
-form .box{
-    width: 98.5%;
-    height: 2.8em;
-    position: relative;
-    bottom: 10px;
-    border: 0;
-    border-radius: 5px;
 }
 
-.option select{
-    width: 98.5%;
-    height: 2.7em;
-    position: relative;
-    bottom: 10px;
+td{
+    border: 1px solid rgb(204,200,200);
+    text-align: left;
+    padding: 8px 15px;
 }
-#summit{
-    text-align: center;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    border-radius: 20px;
-    background-color: red;
-    width: 20%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: rgb(204,200,200);
+}
+
+input[type="text"],input[type="number"]{
+    width:91%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+}
+
+input[type="submit"],input[type="reset"]{
+    background: #eee;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: #4b99d8;
+}
+
+input[type="reset"]:hover{
+    background: #4b99d8;
+}
+
+button{
+    background: #eee;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background:#4b99d8 ;
 }

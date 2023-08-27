@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>code alpha-survey form</title>
+    <title>Registration form</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <div class="heading">
-        <h1>CODE ALPHA - survey form</h1>
-        <h2>To fill the form read all the guidlines correctly</h2>
-        <form>
-            <div class="content">
-                <label>Name</label><br><br>
-                <input type="name" name="name" placeholder="Enter your name" class="box"><br><br>
-                <label>email id</label><br><br>
-                <input type="email" name="email" placeholder="Enter your email id" class="box"><br><br>
-                <label>Phone number</label><br><br>
-                <input type="Phone number" name="phone number" placeholder="Enter your Phone number" class="box"><br><br>
-                <label>age</label><br><br>
-                <input type="age" name="age" placeholder="Enter your age" class="box"><br><br> 
-                <label>Gender</label><br><br>
-                <input type="radio" value="male" >Male &nbsp;
-                <input type="radio" value="female" >female&nbsp;
-                <input type="radio" value="other" >other&nbsp;
-                <br><br> 
-                <label>course</label><br><br>
-                <input type="course" name="course" placeholder="course name" class="box"><br><br>
-                <label>year</label><br><br>
-                <input type="year" name="year" placeholder="passout year" class="box"><br><br>
-                <label>college name</label><br><br>
-                <input type="college name" name="college name" placeholder="Enter your college name" class="box"><br><br>
-                <label>Which option best describes your current role?</label><br><br>
-
-
-            </div>
-            <div class="option">
-                <select>
-                    <option name="Select your Role">Select your Role</option>
-                    <option value="student">Student</option>
-                    <option value="Full time job">full time job</option>
-                    <option value="Full time Learner">Full time learner</option>
-                    <option value="prefer not to say">prefer not to say</option>
-                    <option value="other">other</option>
-
-                </select>
-            </div>
-            </div> 
-            
-            <div id="summit">
-
-                <form >summit</form>
-            </div>
-        </form>
-
-</body> 
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onFormSubmit()">
+                        <div>
+                            <label for="productCode">ProductCode</label>
+                            <input type="text" name="productCode" id="productCode">
+                        </div>
+                        <div>
+                            <label for="product">ProductName</label>
+                            <input type="text" name="product" id="product">
+                        </div>
+                        <div>
+                            <label for="qty">Phone number</label>
+                            <input type="number" name="qty" id="qty">
+                        </div>
+                        <div>
+                            <label for="perPrice">Roll number</label>
+                            <input type="number" name="perPrice" id="perPrice">
+                        </div>
     
+                        <div class="form_action--button">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+    
+                    <td>
+                        <table class="list" id="storeList">
+                            <thead>
+                                <tr>
+                                    <th>Product Code</th>
+                                    <th>Product Name</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+    
+                            </tbody>
+                        </table>
+                    </td>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="index.js"></script>
+</body>
+
 </html>
